@@ -18,8 +18,9 @@ a{
 }
 button{
     padding: 0;
-    background-color: transparent;
+    border-radius: 3px;
     border: none;
+
 }
 ul{
     padding: 0;
@@ -32,9 +33,32 @@ body{
     background-color: #fff;
 
 }
+.btn{
+    padding: 15px 35px;
+    color: #FFF;
+    font-size: 15px;
+    background-color: #3172B9;
+    font-weight: 600;
+}
+.bt{
+    width: 250px;
+    height: 58px;
+    padding: 15px 35px;
+    background-color: #3172B9;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+
+}
 .nav__list{
     display: flex;
-    gap: 85px;
+    gap: 52px;
+}
+.Home{
+    color: #3172B9;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 600;   
 }
 .header__container{
     display: flex;
@@ -42,16 +66,42 @@ body{
 }
 .nav{
     display: flex;
-    margin-right: 85px;
+    margin-right: 194px;
     margin-left: auto;
 }
 .header{
     padding: 14px 0;
-    box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.10);
 }
-.nav__home{
-    padding: 0;
-    color: #3172B9;
-    border: none;
+.hero__content{
+    background-image: url('../img/hero.jpg');
+    width: 1540px;
+    height: 550px;
+    flex-shrink: 0;
+}
+.hero__title{
+    color: #1C1C1C;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 130%;
+    max-width: 529px;
+    margin-bottom: 104px;
+}
+.hero__descrirtion{
+    color: #787878;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 155%;
+    max-width: 471px;
+    margin-bottom: 50px;
+}
+.hero__certificate{
+    color: #787878;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 155%;
+    text-transform: uppercase;
+    max-width: 143px;
+    margin-bottom: 17px;
+}
 
-}
+
