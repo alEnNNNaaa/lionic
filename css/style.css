@@ -33,6 +33,9 @@ body{
     background-color: #fff;
 
 }
+.logo {
+    margin-right: auto;
+}
 .btn{
     padding: 15px 35px;
     color: #FFF;
@@ -41,8 +44,6 @@ body{
     font-weight: 600;
 }
 .bt{
-    width: 250px;
-    height: 58px;
     padding: 15px 35px;
     background-color: #3172B9;
     color: #FFF;
@@ -52,6 +53,7 @@ body{
 }
 .nav__list{
     display: flex;
+    align-items: center;
     gap: 52px;
 }
 .Home{
@@ -65,43 +67,59 @@ body{
     align-items: center;
 }
 .nav{
+    margin-right: 52px;
     display: flex;
-    margin-right: 194px;
-    margin-left: auto;
 }
 .header{
-    padding: 14px 0;
+    padding: 30px 0;
 }
 .hero__content{
-    background-image: url('../img/hero.jpg');
-    width: 1540px;
-    height: 550px;
-    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 113px 0 134px 0;
 }
+
+.hero {
+    background-image: url('../img/hero.jpg');
+    background-size: cover; /* изучить */
+}
+
 .hero__title{
+    margin: 0;
     color: #1C1C1C;
     font-size: 40px;
     font-weight: 300;
     line-height: 130%;
     max-width: 529px;
-    margin-bottom: 104px;
+    margin-bottom: 26px;
 }
 .hero__descrirtion{
+    margin: 0;
     color: #787878;
     font-size: 16px;
     font-weight: 400;
     line-height: 155%;
     max-width: 471px;
-    margin-bottom: 50px;
+    margin-bottom: 34px;
 }
 .hero__certificate{
+    padding-left: 27px;
     color: #787878;
     font-size: 11px;
     font-weight: 400;
     line-height: 155%;
     text-transform: uppercase;
-    max-width: 143px;
-    margin-bottom: 17px;
+    background-image: url('../img/secure.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.hero-btn__wrapper {
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+    align-items: center;
 }
 
 
