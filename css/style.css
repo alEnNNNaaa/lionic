@@ -54,6 +54,18 @@ body{
     display: flex;
     gap: 52px;
 }
+.nav__link{
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+
+}
+
+.Home:hover{
+    border-color: #3172B9;
+}
+
 .Home{
     color: #3172B9;
     font-family: Open Sans;
