@@ -7,7 +7,7 @@ html{
     box-sizing: inherit;
 }
 .container{
-    max-width: 1740px;
+    max-width: 1170px;
     margin: 0 auto ;
     padding: 0 15px;
 
@@ -28,7 +28,7 @@ ul{
     list-style: none;
 }
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open ', sans-serif;
     font-size: 16px;
     background-color: #fff;
 
@@ -46,41 +46,87 @@ body{
 .bt{
     padding: 15px 35px;
     background-color: #3172B9;
+    font-family: Open Sans;
     color: #FFF;
     font-size: 15px;
     font-weight: 600;
 
 }
+
 .nav__list{
     display: flex;
     align-items: center;
     gap: 52px;
 }
 .nav__link{
-    padding-bottom: 5px;
-    font-size: 18px;
-    font-weight: 600;
-    border-bottom: 2px solid transparent;
-
-}
-
-.Home:hover{
-    border-color: #3172B9;
-}
-
-.Home{
-    color: #3172B9;
+    color: #1C1C1C;
     font-family: Open Sans;
     font-size: 15px;
-    font-weight: 600;   
+    font-weight: 300;
+    position: relative;   
+    font-size: 18px;
+    font-weight: 600;
+}
+.nav__link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    width: 100%;
+    display: block;
+    background-color: #3172B9;
+    /*transform: translateY(10px);*/
+    /*opacity: 0;*/
+    transform: scaleX(0);
+    transition: transform .2s ease-in-out,opacity .2s ease-in-out;
+}
+.nav__link:focus-visible{
+    outline-offset: 2px;
+    outline: 2px solid #3172B9;
+}
+.nav__link:hover::before{
+    transform: none;
+    opacity: 1;
+}
+.nav__link--active::before,
+.nav__link:active::before{
+    color: #3172B9;
+    background-color: #3172B9;
+}
+.nav__link--active,
+.nav__link:active{
+    color: #3172B9;
+}
+.search-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-btn:focus-visible{
+    outline-offset: 2px;
+    outline: 2px solid #3172B9;
+}
+
+.btn{
+    font-family: Open Sans;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+}
+.Home{
+    color: #3172B9;
+    font-family: Open Sans;  
 }
 .header__container{
     display: flex;
     align-items: center;
 }
-.nav{
-    margin-right: 52px;
+.nav{ 
     display: flex;
+    margin-right: 52px;
+    margin-left: auto;
 }
 .header{
     padding: 30px 0;
@@ -99,12 +145,12 @@ body{
 
 .hero__title{
     margin: 0;
+    max-width: 529px;
     color: #1C1C1C;
+    font-family: Open Sans;
     font-size: 40px;
     font-weight: 300;
-    line-height: 130%;
-    max-width: 529px;
-    margin-bottom: 26px;
+    line-height: 130%; /* 52px */
 }
 .hero__descrirtion{
     margin: 0;
@@ -113,6 +159,7 @@ body{
     font-weight: 400;
     line-height: 155%;
     max-width: 471px;
+    margin-top: 26px;
     margin-bottom: 34px;
 }
 .hero__certificate{
