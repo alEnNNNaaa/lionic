@@ -20,6 +20,7 @@ button{
     padding: 0;
     border-radius: 3px;
     border: none;
+    cursor: pointer;
 
 }
 ul{
@@ -46,7 +47,6 @@ body{
 .bt{
     padding: 15px 35px;
     background-color: #3172B9;
-    font-family: Open Sans;
     color: #FFF;
     font-size: 15px;
     font-weight: 600;
@@ -60,12 +60,12 @@ body{
 }
 .nav__link{
     color: #1C1C1C;
-    font-family: Open Sans;
     font-size: 15px;
     font-weight: 300;
     position: relative;   
     font-size: 18px;
     font-weight: 600;
+    transition: color .2s ease-in-out;
 }
 .nav__link::before{
     content: '';
@@ -83,14 +83,15 @@ body{
 }
 .nav__link:focus-visible{
     outline-offset: 2px;
-    outline: 2px solid #3172B9;
+    outline: 2px solid #71A7E2;
 }
-.nav__link:hover::before{
-    transform: none;
-    opacity: 1;
+.nav__link:hover{
+    color: #71A7E2;
 }
 .nav__link--active::before,
 .nav__link:active::before{
+    transform: none;
+    opacity: 1;
     color: #3172B9;
     background-color: #3172B9;
 }
@@ -98,26 +99,23 @@ body{
 .nav__link:active{
     color: #3172B9;
 }
-.search-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.search-btn:focus-visible{
-    outline-offset: 2px;
-    outline: 2px solid #3172B9;
-}
 
 .btn{
-    font-family: Open Sans;
     color: #FFF;
     font-size: 15px;
     font-weight: 600;
     border-bottom: 2px solid transparent;
+    transition: background-color .2s ease-in-out, border-color .2s ease-in-out;
+}
+.btn:focus-visible,
+.btn:hover{
+    background-color: #71A7E2;
+}
+.btn:active{
+    background-color: #0E3B6C;
 }
 .Home{
     color: #3172B9;
-    font-family: Open Sans;  
 }
 .header__container{
     display: flex;
@@ -147,7 +145,6 @@ body{
     margin: 0;
     max-width: 529px;
     color: #1C1C1C;
-    font-family: Open Sans;
     font-size: 40px;
     font-weight: 300;
     line-height: 130%; /* 52px */
