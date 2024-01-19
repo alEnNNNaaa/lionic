@@ -203,4 +203,80 @@ body {
     align-items: center;
 }
 
+.about {
+
+}
+
+.about__top {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.about__description {
+    color: #787878;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.about__botton {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.about__plate {
+    border-radius: 5px;
+    border: 1px solid #E4E4E4;
+}
+
+.about-plate {
+    padding:  61px 101px;
+}
+
+.about-plate__text {
+    padding-top: 27px;
+    min-height: 104px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 68px 66px;
+}
+
+.about-plate__title {
+    margin: 0;
+    margin-bottom: 15px;
+    color: #1C1C1C;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.about-plate__description {
+    margin: 0;
+    max-width: 210px;
+    color: #787878;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.about-plate--bg--infinity .about-plate__text {
+    background-image: url('../img/infinity.svg');
+}
+
+.about-plate--bg--heart .about-plate__text {
+    background-image: url('../img/heart.svg');
+}
+
+.about-plate--bg--phone .about-plate__text {
+    background-image: url('../img/phone.svg');
+}
+
+.about-plate--bg--hammer .about-plate__text {
+    background-image: url('../img/hammer.svg');
+}
+
+
 
