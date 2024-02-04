@@ -203,10 +203,6 @@ body {
     align-items: center;
 }
 
-.about {
-
-}
-
 .about__top {
     text-align: center;
 }
@@ -216,6 +212,11 @@ body {
     font-weight: 300;
 }
 
+#about__plate-grid {
+    display: grid;
+    grid-template-areas: "a a a a";
+    gap: 30px;
+}
 .about__description {
     color: #787878;
     font-size: 16px;
@@ -238,7 +239,7 @@ body {
 }
 
 .about-plate__text {
-    padding-top: 27px;
+    padding-top: 100px;
     min-height: 104px;
     text-align: center;
     background-repeat: no-repeat;
@@ -262,20 +263,24 @@ body {
     line-height: 150%;
 }
 
-.about-plate--bg--infinity .about-plate__text {
-    background-image: url('../img/infinity.svg');
+#Articles-grid {
+    height: 180px;
+    display: grid;
+    grid-template-areas: "a a";
+    gap: 100px;
 }
 
-.about-plate--bg--heart .about-plate__text {
-    background-image: url('../img/heart.svg');
+.Articles-plate--bx__item1 {
+    background-image: url(../img/item1.svg);
 }
-
-.about-plate--bg--phone .about-plate__text {
-    background-image: url('../img/phone.svg');
+.Articles-plate--bx__item2 {
+    background-image: url(../img/item2.svg);
 }
-
-.about-plate--bg--hammer .about-plate__text {
-    background-image: url('../img/hammer.svg');
+.Articles-plate--bx__item3 {
+    background-image: url(../img/item3.svg);
+}
+.Articles-plate--bx__item4 {
+    background-image: url(../img/item4.svg);
 }
 
 
